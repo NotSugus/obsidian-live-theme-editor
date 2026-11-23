@@ -1,0 +1,153 @@
+/* The panel uses fixed colors on purpose: if you pick unreadable theme colors, the editor stays usable. */
+.lte-panel {
+  --lte-bg: #fafafa;
+  --lte-fg: #1c1c1c;
+  --lte-muted: #6b6b6b;
+  --lte-border: #d4d4d4;
+  --lte-input-bg: #ffffff;
+  --lte-button-bg: #ececec;
+
+  position: fixed;
+  z-index: 40;
+  width: 340px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--lte-bg);
+  color: var(--lte-fg);
+  border: 1px solid var(--lte-border);
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+  font-size: 13px;
+}
+
+.theme-dark .lte-panel {
+  --lte-bg: #232326;
+  --lte-fg: #ececec;
+  --lte-muted: #9a9a9a;
+  --lte-border: #3d3d42;
+  --lte-input-bg: #17171a;
+  --lte-button-bg: #34343a;
+}
+
+.lte-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--lte-border);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.lte-header:active {
+  cursor: grabbing;
+}
+
+.lte-title {
+  font-weight: 600;
+}
+
+.lte-body {
+  overflow-y: auto;
+  padding: 4px 10px 10px;
+}
+
+.lte-section h4 {
+  margin: 12px 0 6px;
+  font-size: 13px;
+  color: var(--lte-muted);
+}
+
+.lte-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.lte-label {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.lte-var-name {
+  flex: 0 0 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--lte-fg);
+}
+
+.lte-panel input[type="text"],
+.lte-panel select {
+  background: var(--lte-input-bg);
+  color: var(--lte-fg);
+  border: 1px solid var(--lte-border);
+  border-radius: 4px;
+  height: 26px;
+  padding: 0 6px;
+  box-shadow: none;
+}
+
+.lte-panel button {
+  background: var(--lte-button-bg);
+  color: var(--lte-fg);
+  border: 1px solid var(--lte-border);
+  border-radius: 4px;
+  height: 26px;
+  padding: 0 8px;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.lte-panel button:disabled,
+.lte-panel select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.lte-panel button:focus-visible,
+.lte-panel input:focus-visible,
+.lte-panel select:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 1px;
+}
+
+.lte-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  padding: 0 !important;
+}
+
+.lte-color {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 26px;
+  padding: 0;
+  border: 1px solid var(--lte-border);
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+}
+
+.lte-hex {
+  flex: 0 0 76px;
+  width: 76px;
+  font-family: var(--font-monospace);
+}
+
+.lte-value,
+.lte-var-input,
+.lte-select {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.lte-reset {
+  width: 100%;
+  margin-top: 12px;
+}

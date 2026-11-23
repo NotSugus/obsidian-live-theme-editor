@@ -1,0 +1,9 @@
+{
+  "id": "live-theme-editor",
+  "name": "Live Theme Editor",
+  "version": "1.0.0",
+  "minAppVersion": "1.4.0",
+  "description": "Edit your theme colors and CSS variables from a draggable floating panel, with live preview and named presets.",
+  "author": "You",
+  "isDesktopOnly": false
+}

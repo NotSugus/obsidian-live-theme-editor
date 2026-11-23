@@ -1,0 +1,24 @@
+{
+  "active": {
+    "--text-normal": "#fff0d9",
+    "--text-muted": "#e8e2d8",
+    "--background-modifier-border": "#6d747e",
+    "--background-primary": "#1d261a",
+    "--background-secondary": "#1d261a",
+    "--interactive-accent": "#203f7f",
+    "--color-accent": "#203f7f",
+    "--text-faint": "#d1c6c2",
+    "--link-external-color": "#6E9AE0",
+    "--pill-color": "#6E9AE0",
+    "--tag-color": "#6E9AE0",
+    "--tag-color-hover": "#E0AB6E",
+    "--tag-decoration": "#6E9AE0",
+    "--tag-decoration-hover": "#E0AB6E"
+  },
+  "presets": [],
+  "panel": {
+    "x": 153.04296875,
+    "y": 336.20703125,
+    "open": false
+  }
+}
